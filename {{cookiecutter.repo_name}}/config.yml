@@ -1,0 +1,2 @@
+default:
+    data_dir: {{cookiecutter.data_directory}}
