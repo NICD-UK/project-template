@@ -1,0 +1,7 @@
+{
+    "project_name": "Project Name",
+    "repo_name": "{{cookiecutter.project_name|lower|replace(' ', '-')}}",
+    "description": "A short description of the project.",
+    "data_directory": "data/raw",
+	"language": ["Python", "R"]
+}
