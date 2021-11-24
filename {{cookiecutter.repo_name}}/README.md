@@ -2,9 +2,11 @@
 
 {{cookiecutter.description}}
 
-## Directory Structure
+## Project Organization
 
 ```
+README.md
+config.yml
 data/
 ├─ clean/
 ├─ model/
