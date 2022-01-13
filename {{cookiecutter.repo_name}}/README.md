@@ -79,7 +79,7 @@ Task sections in the [CRISP-DM Guide](https://www.the-modeling-agency.com/crisp-
     - *models* (`data/model/`)
     - *model descriptions* (`notes.md`)
 4. **Assess Model** [Section 4.4]
-    - *model assessment (`notes.md`)
+    - *model assessment* (`notes.md`)
 
 ### Evaluation
 
