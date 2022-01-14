@@ -13,11 +13,11 @@ data/
 ├─ raw/
 ├─ wrangle/
 notebooks/
+notes.md
+reports/
 ├─ describe/
 ├─ explore/
 ├─ final/
-notes.md
-reports/
 src/
 ├─ clean/
 ├─ model/
