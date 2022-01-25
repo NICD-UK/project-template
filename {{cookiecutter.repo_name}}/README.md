@@ -58,7 +58,7 @@ Task sections in the [CRISP-DM Guide](https://www.the-modeling-agency.com/crisp-
 3. **Explore Data** [Section 2.3]
     - *exploration report* (`reports/explore/`)
 
-## Data Preparation
+### Data Preparation
 
 1. **Clean Data** [Section 3.2]
     - *cleaning scripts* (e.g. `src/clean/`)
@@ -72,8 +72,8 @@ Task sections in the [CRISP-DM Guide](https://www.the-modeling-agency.com/crisp-
 1. **Select Modelling Techniques** [Section 4.1]
     - *modelling techniques* (`notes.md`)
     - *modelling assumptions* (`notes.md`)
-2. **Select Test Design** [Section 4.2]
-    - *test design* (`notes.md`)
+2. **Select Experimental Design** [Section 4.2]
+    - *experimental design* (`notes.md`)
 3. **Build Model** [Section 4.3]
     - *modelling scripts* (`src/model/`)
     - *models* (`data/model/`)
