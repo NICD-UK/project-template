@@ -53,7 +53,7 @@ Task sections in the [CRISP-DM Guide](https://www.the-modeling-agency.com/crisp-
     - *raw data* (`data/raw/`)
     - *initial cleaning scripts* (`src/clean/`)
     - *initial clean data* (`data/clean`)
-2. **Describle Data** [Section 2.2]
+2. **Describe Data** [Section 2.2]
     - *description report* (`reports/describe/`)
 3. **Explore Data** [Section 2.3]
     - *exploration report* (`reports/explore/`)
