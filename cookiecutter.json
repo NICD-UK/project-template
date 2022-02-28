@@ -4,5 +4,5 @@
     "description": "A short description of the project.",
     "data_directory": "data/raw",
 	"language": ["Python", "R"],
-    "environment": ["yes", "no"]
+    "environment": ["venv", "none"]
 }

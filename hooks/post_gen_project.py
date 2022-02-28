@@ -22,11 +22,9 @@ for file in files:
         sys.exit(1)
 
 # add virtual envoronment
-if language == "Python" and environment == "yes":   
+if environment == "venv":   
     packages = [
         "ipykernel",
-        "pandas",
-        "pyyaml"
     ]
     subprocess.run(["python3", "-m", "venv", ".venv"])
     subprocess.run([".venv/bin/python", "-m", "pip", "install", "--upgrade", "pip"])

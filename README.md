@@ -14,5 +14,6 @@ You will be promted for five inputs:
 3. project description (`description`)
 4. path to data directory (`data_directory`)
 5. programming language (`language`)
+6. environment (`environment`)
 
 Suggestions are provided in brackets.

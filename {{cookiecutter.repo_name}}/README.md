@@ -28,12 +28,12 @@ src/
 
 Task sections in the [CRISP-DM Guide](https://www.the-modeling-agency.com/crisp-dm.pdf) are provided.
 
-### Business Understanding
+### Project Understanding
 
-1. **Determine Business Objectives** [Section 1.1]
+1. **Determine Project Objectives** [Section 1.1]
     - *background* (`notes.md`)
-    - *business objectives* (`notes.md`)
-    - *business success criteria* (`notes.md`)
+    - *project objectives* (`notes.md`)
+    - *project success criteria* (`notes.md`)
 2. **Assess Situation** [Section 1.2]
     - *inventory of resources* (`notes.md`)
     - *requirements, assumptions and constraints* (`notes.md`)
