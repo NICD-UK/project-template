@@ -1,6 +1,6 @@
-# NICD Project Template
+# Project Template
 
-To use the NICD project template:
+To use the project template:
 
 ```
 pip install cookiecutter
