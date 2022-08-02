@@ -2,5 +2,9 @@
 config.yml
 
 # data directory
-/data/
+/data/{clean,model,raw,wrangle}/*
+/data/{clean,model,raw,wrangle}/*/
+!/data/{clean,model,raw,wrangle}/.gitkeep
 
+# .venv directory
+/.venv/
