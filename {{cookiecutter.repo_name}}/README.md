@@ -84,7 +84,7 @@ Task sections in the [CRISP-DM Guide](https://www.the-modeling-agency.com/crisp-
 ### Evaluation
 
 1. **Evaluate Results** [Section 5.1]
-    - *evaluation of data science results with respect to business success criteria* (`notes.md`)
+    - *evaluation of data science results with respect to project success criteria* (`notes.md`)
     - *approved models* (`notes.md`)
 2. **Review Process** [Section 5.2]
     - *process review* (`notes.md`)
