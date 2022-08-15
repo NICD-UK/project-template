@@ -6,5 +6,10 @@ config.yml
 /data/{clean,model,raw,wrangle}/*/
 !/data/{clean,model,raw,wrangle}/.gitkeep
 
+# notebooks directory
+/notebooks/*
+/notebooks/*/
+!/notebooks/.gitkeep
+
 # .venv directory
 /.venv/

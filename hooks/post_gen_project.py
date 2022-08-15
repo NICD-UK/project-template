@@ -24,7 +24,7 @@ for file in files:
 # add virtual envoronment
 if environment == "venv":   
     packages = [
-        "ipykernel",
+        "ipykernel", "pandas", "numpy", "scipy", "scikit-learn"
     ]
     subprocess.run(["python3", "-m", "venv", ".venv"])
     subprocess.run([".venv/bin/python", "-m", "pip", "install", "--upgrade", "pip"])
