@@ -1,6 +1,11 @@
 {
     "project_name": "Project Name",
-    "repo_name": "{{cookiecutter.project_name|lower|replace(' ', '-')}}",
-    "description": "A short description of the project.",
-    "data_directory": "data/raw",
+    "project_slug": "{{cookiecutter.project_name|lower|replace(' ', '-')}}",
+    "project_manager_name": "Project Manager Name",
+    "project_manager_email": "Project Manager Email",
+    "project_sponsor_name": "Project Sponsor Name",
+    "project_sponsor_email": "Project Sponsor Email",
+    "project_description": "Project Description",
+    "raw_data_directory": "data/raw",
+    "python_venv": ["Yes", "No"]
 }
