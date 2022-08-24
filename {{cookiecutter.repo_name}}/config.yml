@@ -1,2 +1,2 @@
 default:
-    data_dir: {{cookiecutter.data_directory}}
+    raw_data_directory: {{cookiecutter.raw_data_directory}}

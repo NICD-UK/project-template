@@ -13,6 +13,7 @@ data/
 ├─ raw/
 ├─ wrangle/
 notebooks/
+notes.md
 reports/
 ├─ describe/
 ├─ explore/
@@ -25,3 +26,11 @@ src/
 
 ## Data Science Workflow
 
+### Business Understanding
+
+### Data Understanding and Preparation
+
+### Modelling
+
+
+### Development
