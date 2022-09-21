@@ -33,9 +33,9 @@ data/
 ├─ wrangle/
 notebooks/
 reports/
-├─ describe/
-├─ explore/
+├─ clean/
 ├─ final/
+├─ wrangle/
 src/
 ├─ clean/
 ├─ model/
