@@ -42,7 +42,31 @@ src/
 ├─ wrangle/
 ```
 
-## Workflow
+## Data Science Workflow
+
+### 1. Business Understanding
+
+- Initiate Project
+- Plan Project
+
+### 2. Data Understanding and Preparation
+
+- Import Data
+- Clean Data
+- Wrangle Data
+
+### 3. Modelling
+
+- Build Model
+- Evaluate Model
+- Review Process
+
+### 4. Deployment
+
+- Deploy Model
+- Monitor Model 
+- Maintain Model
+- Review Project
 
 ![](figures/clean.drawio.svg)
 
