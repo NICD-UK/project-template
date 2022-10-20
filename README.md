@@ -17,7 +17,7 @@ You will be promted for nine inputs:
 4. Project Manager Email
 5. Project Sponsor Name
 6. Project Sponsor Email
-7. Project Description
+7. Project Summary
 8. Raw Data Directory
 9. Python `venv` (Yes / No)
 

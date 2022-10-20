@@ -6,9 +6,9 @@
 
 ---
 
-## Description
+## Summary
 
-{{cookiecutter.project_description}}
+{{cookiecutter.project_summary}}
 
 ---
 
