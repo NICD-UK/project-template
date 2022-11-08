@@ -9,7 +9,7 @@ pip install cookiecutter
 cookiecutter https://github.com/NICD-UK/project-template
 ```
 
-You will be promted for nine inputs:
+You will be prompted for nine inputs:
 
 1. Project Name
 2. Project Directory Name
@@ -46,7 +46,9 @@ src/
 
 ### 1. Business Understanding
 
-- Initiate Project
+- Determine Objectives
+- Determine Deliverables
+- Determine Resources
 - Plan Project
 
 ### 2. Data Understanding and Preparation
@@ -55,17 +57,17 @@ src/
 - Clean Data
 - Wrangle Data
 
-### 3. Modelling
+### 3. Prototyping
 
-- Build Model
-- Evaluate Model
+- Develop Data Product
+- Evaluate Data Product
 - Review Process
 
-### 4. Deployment
+### 4. Prodution
 
-- Deploy Model
-- Monitor Model 
-- Maintain Model
+- Deploy Data Product
+- Monitor Data Product 
+- Maintain Data Product
 - Review Project
 
 ![](figures/clean.drawio.svg)
