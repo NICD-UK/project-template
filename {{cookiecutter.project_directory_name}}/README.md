@@ -37,11 +37,9 @@
 
 | Role | Name | Email |
 | - | - | - |
-| Project Manager | {{cookiecutter.project_manager_name}} | {{cookiecutter.project_manager_email}} |
-| Project Sponsor | {{cookiecutter.project_sponsor_name}} | {{cookiecutter.project_sponsor_email}} |
-| Project Lead | ... | ... |
-| Project Team | ... | ... |
-| Stakeholder | ... | ... |
+| Data Analyst | |
+| Data Scientist | |
+| Data Engineer | |
 
 ### Budget
 
