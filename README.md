@@ -70,12 +70,18 @@ src/
 - Maintain Data Product
 - Review Project
 
+## Guide
+
+### Clean Data
+
 ![](figures/clean.drawio.svg)
 
 1. Create a cleaning script in the `src/clean` directory that imports and cleans the raw data from the `data/raw` directory and writes to the `data/clean/` directory.
 2. The cleaned data is stored in the `data/clean/` directory.
 3. Create a cleaning report in the `report/clean/` directory that reads the cleaned data from the `data/clean/` directory.
 4. The cleaning report in the `report/clean/` directory is used to update the cleaning script in the `src/clean/` directory.
+
+### Wrangle Data
 
 ![](figures/wrangle.drawio.svg)
 
