@@ -51,7 +51,7 @@ src/
 - Determine Resources
 - Plan Project
 
-### 2. Data Understanding and Preparation
+### 2. Data Preparation and Understanding
 
 - Import Data
 - Clean Data
