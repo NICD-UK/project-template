@@ -61,14 +61,14 @@ src/
 
 - Develop Data Product
 - Evaluate Data Product
-- Review Process
+- Approve Data Product
 
 ### 4. Prodution
 
 - Deploy Data Product
 - Monitor Data Product 
 - Maintain Data Product
-- Review Project
+- Close Project
 
 ## Guide
 
