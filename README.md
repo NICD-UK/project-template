@@ -51,7 +51,7 @@ src/
 - **Determine Resources:**
 - **Plan Project:**
 
-### 2. Data Understanding and Preparation
+### 2. Data Preparation and Understanding
 
 - **Import Data:** 
 - **Clean Data:**
@@ -59,16 +59,16 @@ src/
 
 ### 3. Prototyping
 
-- **Develop Data Product:**
-- **Evaluate Data Product:**
-- **Review Process:**
+- **Develop Data Product**
+- **Evaluate Data Product**
+- **Approve Data Product**
 
-### 4. Prodution
+### 4. Production
 
-- **Deploy Data Product:**
-- **Monitor Data Product:**
-- **Maintain Data Product:**
-- **Review Project:**
+- **Deploy Data Product**
+- **Monitor Data Product**
+- **Maintain Data Product**
+- **Close Project**
 
 ## Guide
 
