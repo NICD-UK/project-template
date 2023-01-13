@@ -46,29 +46,29 @@ src/
 
 ### 1. Business Understanding
 
-- Determine Objectives
-- Determine Deliverables
-- Determine Resources
-- Plan Project
+- **Determine Objectives:**
+- **Determine Deliverables:**
+- **Determine Resources:**
+- **Plan Project:**
 
 ### 2. Data Understanding and Preparation
 
-- Import Data
-- Clean Data
-- Wrangle Data
+- **Import Data:** 
+- **Clean Data:**
+- **Wrangle Data:**
 
 ### 3. Prototyping
 
-- Develop Data Product
-- Evaluate Data Product
-- Review Process
+- **Develop Data Product:**
+- **Evaluate Data Product:**
+- **Review Process:**
 
 ### 4. Prodution
 
-- Deploy Data Product
-- Monitor Data Product 
-- Maintain Data Product
-- Review Project
+- **Deploy Data Product:**
+- **Monitor Data Product:**
+- **Maintain Data Product:**
+- **Review Project:**
 
 ## Guide
 

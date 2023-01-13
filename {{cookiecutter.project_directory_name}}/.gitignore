@@ -1,14 +1,12 @@
 # configuration file
-config.yml
+# config.yml
 
 # data directory
-/data/{clean,model,raw,wrangle}/*
-/data/{clean,model,raw,wrangle}/*/
-!/data/{clean,model,raw,wrangle}/.gitkeep
+/data/
+!/data/*/.gitkeep
 
 # notebooks directory
-/notebooks/*
-/notebooks/*/
+/notebooks/
 !/notebooks/.gitkeep
 
 # .venv directory
