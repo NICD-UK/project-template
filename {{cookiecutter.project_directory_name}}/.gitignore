@@ -1,10 +1,8 @@
+# .venv directory
+/.venv/
+
 # data directory
 /data/
-!/data/*/.gitkeep
 
 # notebooks directory
 /notebooks/
-!/notebooks/.gitkeep
-
-# .venv directory
-/.venv/
