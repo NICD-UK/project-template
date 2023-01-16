@@ -1,6 +1,3 @@
-# configuration file
-# config.yml
-
 # data directory
 /data/
 !/data/*/.gitkeep
