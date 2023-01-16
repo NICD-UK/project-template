@@ -3,7 +3,7 @@ import subprocess
 venv_project = "{{cookiecutter.venv_project}}"
 git_project = "{{cookiecutter.git_project}}"
 
-# createe venv project
+# create venv project
 if venv_project == "Yes":   
     subprocess.run(["python3", "-m", "venv", ".venv"], stdout=subprocess.DEVNULL)
     subprocess.run([".venv/bin/python", "-m", "pip", "install", "--upgrade", "pip"], stdout=subprocess.DEVNULL)

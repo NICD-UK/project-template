@@ -19,8 +19,8 @@ You will be prompted for nine inputs:
 6. Project Sponsor Email
 7. Project Summary
 8. Raw Data Directory
-9. `venv` Project (Yes / No)
-10. `git` Project (Yes / No)
+9. `venv` Project (No / Yes)
+10. `git` Project (No / Yes)
 
 ## Organization
 
