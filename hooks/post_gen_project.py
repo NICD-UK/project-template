@@ -5,16 +5,16 @@ git_project = "{{cookiecutter.git_project}}"
 
 # createe venv project
 if venv_project == "Yes":   
-    subprocess.run(["python3 -m venv .venv"])
-    subprocess.run([".venv/bin/python -m pip install --upgrade pip"])
-
-# create git project
-if git_project == "Yes":
-    subprocess.run(["git init"])
-    subprocess.run(["git add --all"])
-    subprocess.run(["git commit -m 'initial commit'"])
+    subprocess.run(["python3", "-m", "venv", ".venv"], stdout=subprocess.DEVNULL)
+    subprocess.run([".venv/bin/python", "-m", "pip", "install", "--upgrade", "pip"], stdout=subprocess.DEVNULL)
 
 # gitignore config.yml
 with open(".gitignore", "a") as f:
     lines = ["\n", "# configuration file\n", "config.yml\n"]
     f.writelines(lines)
+
+# create git project
+if git_project == "Yes":
+    subprocess.run(["git", "init"], stdout=subprocess.DEVNULL)
+    subprocess.run(["git", "add", "--all"], stdout=subprocess.DEVNULL)
+    subprocess.run(["git", "commit", "-m", "'initial commit'"], stdout=subprocess.DEVNULL)
