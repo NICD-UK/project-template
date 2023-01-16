@@ -7,5 +7,6 @@
     "project_sponsor_email": "Project Sponsor Email",
     "project_summary": "Project Summary",
     "raw_data_directory": "data/raw",
-    "python_venv": ["Yes", "No"]
+    "venv_project": ["No", "Yes"],
+    "git_project": ["No", "Yes"]
 }

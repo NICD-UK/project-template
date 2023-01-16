@@ -2,7 +2,13 @@
 /.venv/
 
 # data directory
-/data/
+/data/clean/*
+/data/model/*
+/data/raw/*
+/data/wrangle/*
 
 # notebooks directory
-/notebooks/
+/notebooks/*
+
+# directory structure
+!.gitkeep
