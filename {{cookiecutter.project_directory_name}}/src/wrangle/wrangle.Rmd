@@ -12,7 +12,7 @@ data_name <- "example"
 
 # Read Data
 ```{r}
-clean_data <- read_rds(here("data", "clean", glue("clean-{data_name}-data.rds")))
+clean_data <- read_rds(here("data", "clean", glue("{data_name}.rds")))
 ```
 
 # Wrangle Data
@@ -22,5 +22,5 @@ wrangle_data <- clean_data
 
 # Write Data
 ```{r}
-write_rds(wrangle_data, here("data", "wrangle", glue("wrangle-{data_name}-data.rds")))
+write_rds(wrangle_data, here("data", "wrangle", glue("{data_name}.rds")))
 ```

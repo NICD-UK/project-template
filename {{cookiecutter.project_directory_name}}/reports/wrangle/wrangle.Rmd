@@ -1,5 +1,6 @@
 # Load Libraries
 ```{r message=FALSE}
+library(dlookr)
 library(glue)
 library(here)
 library(tidyverse)
@@ -13,4 +14,9 @@ data_name <- "example"
 # Read Data
 ```{r}
 wrangle_data <- read_rds(here("data", "wrangle", glue("{data_name}.rds")))
+```
+
+# Explore Data
+```{r}
+diagnose_web_report(wrangle_data)
 ```
