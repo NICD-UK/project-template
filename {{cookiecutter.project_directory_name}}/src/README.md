@@ -6,7 +6,7 @@
 
 For each data source:
 
-- [ ] import data from `/data/raw/`
+- [ ] read data from `/data/raw/`
 - [ ] ...
 - [ ] write data to `/data/clean/`
 
