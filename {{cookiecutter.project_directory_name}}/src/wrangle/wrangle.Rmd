@@ -1,0 +1,26 @@
+# Load Libraries
+```{r message=FALSE}
+library(glue)
+library(here)
+library(tidyverse)
+```
+
+# Setup
+```{r}
+data_name <- "example"
+```
+
+# Read Data
+```{r}
+clean_data <- read_rds(here("data", "clean", glue("clean-{data_name}-data.rds")))
+```
+
+# Wrangle Data
+```{r}
+wrangle_data <- clean_data
+```
+
+# Write Data
+```{r}
+write_rds(wrangle_data, here("data", "wrangle", glue("wrangle-{data_name}-data.rds")))
+```

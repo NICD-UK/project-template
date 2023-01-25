@@ -1,28 +1,26 @@
 # Load Libraries
 ```{r message=FALSE}
-library(tidyverse)
-library(janitor)
+library(glue)
 library(here)
-library(glue)=
+library(tidyverse)
 ```
 
 # Setup
 ```{r}
-data_name <- config::get("raw_data_name")
+data_name <- "example"
 ```
 
 # Read Data
 ```{r}
-raw_data <- read_csv(here("data", "raw", glue("{data_name}-data.csv")))
+raw_data <- read_csv(here("data", "raw", glue("raw-{data_name}-data.csv")))
 ```
 
 # Clean Data
 ```{r}
-clean_data <- raw_data |>
-    clean_names()
+clean_data <- raw_data
 ```
 
-# Write data
+# Write Data
 ```{r}
-write_rds(clean_data, here("data", "clean", glue("cleaned-{data_name}-data.rds")))
+write_rds(clean_data, here("data", "clean", glue("clean-{data_name}-data.rds")))
 ```
