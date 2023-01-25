@@ -7,10 +7,7 @@
 For each data source:
 
 - [ ] import data from `/data/raw/`
-- [ ] column names
-- [ ] missing values
-- [ ] column types
-- [ ] quality check
+- [ ] ...
 - [ ] write data to `/data/clean/`
 
 ## Wrangling Checklist
