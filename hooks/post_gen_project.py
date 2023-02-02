@@ -2,6 +2,14 @@ import subprocess
 
 venv_project = "{{cookiecutter.venv_project}}"
 git_project = "{{cookiecutter.git_project}}"
+lang_project = "{{cookiecutter.lang_projecdt}}"
+
+# create lang project
+if lang_project == "Python":
+    subprocess.run(["rm", "{reports/src}/**/*.Rmd"], stdout=subprocess.DEVNULL)
+    subprocess.run(["rm", "{{cookiecutter.project_directory_name}}.Rproj"], stdout=subprocess.DEVNULL)
+elif lang_project == "R":
+    subprocess.run(["rm", "{reports/src}/**/*.py"], stdout=subprocess.DEVNULL)
 
 # create venv project
 if venv_project == "Yes":   
