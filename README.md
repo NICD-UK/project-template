@@ -9,7 +9,7 @@ pip install cookiecutter
 cookiecutter https://github.com/NICD-UK/project-template
 ```
 
-You will be prompted for ten inputs:
+You will be prompted for eleven inputs:
 
 1. Project Name
 2. Project Directory Name
