@@ -19,8 +19,9 @@ You will be prompted for ten inputs:
 6. Project Sponsor Email
 7. Project Summary
 8. Raw Data Directory
-9. `venv` Project (No / Yes)
-10. `git` Project (No / Yes)
+9. Language (Python / R)
+10. `venv` Project (No / Yes)
+11. `git` Project (No / Yes)
 
 ## Organization
 
@@ -32,7 +33,6 @@ data/
 ├─ model/
 ├─ raw/
 ├─ wrangle/
-notebooks/
 reports/
 ├─ clean/
 ├─ final/
