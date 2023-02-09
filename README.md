@@ -9,7 +9,7 @@ pip install cookiecutter
 cookiecutter https://github.com/NICD-UK/project-template
 ```
 
-You will be prompted for nine inputs:
+You will be prompted for eleven inputs:
 
 1. Project Name
 2. Project Directory Name
@@ -19,8 +19,9 @@ You will be prompted for nine inputs:
 6. Project Sponsor Email
 7. Project Summary
 8. Raw Data Directory
-9. `venv` Project (No / Yes)
-10. `git` Project (No / Yes)
+9. Language (Python / R)
+10. `venv` Project (No / Yes)
+11. `git` Project (No / Yes)
 
 ## Organization
 
@@ -32,7 +33,6 @@ data/
 ├─ model/
 ├─ raw/
 ├─ wrangle/
-notebooks/
 reports/
 ├─ clean/
 ├─ final/
@@ -50,7 +50,7 @@ src/
 - **Determine Objectives:**
 - **Determine Deliverables:**
 - **Determine Resources:**
-- **Plan Project:**
+- **Plan Project:** 
 
 ### 2. Data Preparation and Understanding
 
@@ -60,16 +60,16 @@ src/
 
 ### 3. Prototyping
 
-- **Develop Data Product**
-- **Evaluate Data Product**
-- **Approve Data Product**
+- **Develop Data Product:**
+- **Evaluate Data Product:**
+- **Approve Data Product:**
 
 ### 4. Production
 
-- **Deploy Data Product**
-- **Monitor Data Product**
-- **Maintain Data Product**
-- **Close Project**
+- **Deploy Data Product:**
+- **Monitor Data Product:**
+- **Maintain Data Product:**
+- **Close Project:**
 
 ## Guide
 

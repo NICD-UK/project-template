@@ -1,7 +1,21 @@
 import subprocess
+import glob
+import os
 
 venv_project = "{{cookiecutter.venv_project}}"
 git_project = "{{cookiecutter.git_project}}"
+language = "{{cookiecutter.language}}"
+
+# create Python project
+if language == "Python":
+    os.remove("{{cookiecutter.project_directory_name}}.Rproj")
+    for file in glob.glob("**/*.Rmd", recursive=True):
+        os.remove(file)
+
+# create R project
+if language == "R":
+    for file in glob.glob("**/*.py", recursive=True):
+        os.remove(file)
 
 # create venv project
 if venv_project == "Yes":   

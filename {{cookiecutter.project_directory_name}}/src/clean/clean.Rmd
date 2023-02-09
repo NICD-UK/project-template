@@ -1,0 +1,26 @@
+# Load Libraries
+```{r message=FALSE}
+library(glue)
+library(here)
+library(tidyverse)
+```
+
+# Setup
+```{r}
+data_name <- "<data-name>"
+```
+
+# Read Data
+```{r}
+raw_data <- read_csv(here("data", "raw", glue("{data_name}.csv")))
+```
+
+# Clean Data
+```{r}
+clean_data <- raw_data
+```
+
+# Write Data
+```{r}
+write_rds(clean_data, here("data", "clean", glue("{data_name}.rds")))
+```
