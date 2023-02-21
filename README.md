@@ -20,10 +20,12 @@ You will be prompted for eleven inputs:
 7. Project Summary
 8. Raw Data Directory
 9. Language (Python / R)
-10. `venv` Project (No / Yes)
+10. `venv` Project (No / Yes) - **Python ONLY**
 11. `git` Project (No / Yes)
 
-## Organization
+## Project Structure
+
+The project has the following structure:
 
 ```
 README.md
@@ -33,6 +35,8 @@ data/
 ├─ model/
 ├─ raw/
 ├─ wrangle/
+notebooks/
+presentations/
 reports/
 ├─ clean/
 ├─ final/
@@ -42,6 +46,25 @@ src/
 ├─ model/
 ├─ wrangle/
 ```
+
+![](figures/clean.drawio.svg)
+
+1. Create a cleaning script in the `src/clean` directory that imports and cleans the raw data from the `data/raw` directory and writes to the `data/clean/` directory.
+2.  The cleaned data is stored in the `data/clean/` directory.
+3.  Create a cleaning report in the `report/clean/` directory that reads the cleaned data from the `data/clean/` directory.
+4.  The cleaning report in the `report/clean/` directory is used to update the cleaning script in the `src/clean/` directory.
+
+**Note:** There is *one* cleaning script for each data source and the cleaning scripts should only contain transformations that are independent of the data product.
+
+![](figures/wrangle.drawio.svg)
+
+1. Create a wrangling script in the `src/wrangle` directory that reads and wrangles the clean data from the `data/clean/` directory and writes to the `data/wrangle/` directory.
+2. The wragled data is stored in the `data/wrangle/` directory.
+3. Create a wrangling report in the `report/wrangle/` directory that reads the wrangled data from the `data/wrangle/` directory.
+4. The wrangling report in the `report/wrangle/` directory is used to update the wrangling script in the `src/wrangle/` directory.
+
+**Note:** There is *one* wrangling script for each data product and the wrangling scripts should only contain transofrmations that are dependent on the data product.
+
 
 ## Data Science Workflow
 
@@ -70,23 +93,3 @@ src/
 - **Monitor Data Product:**
 - **Maintain Data Product:**
 - **Close Project:**
-
-## Guide
-
-### Clean Data
-
-![](figures/clean.drawio.svg)
-
-1. Create a cleaning script in the `src/clean` directory that imports and cleans the raw data from the `data/raw` directory and writes to the `data/clean/` directory.
-2. The cleaned data is stored in the `data/clean/` directory.
-3. Create a cleaning report in the `report/clean/` directory that reads the cleaned data from the `data/clean/` directory.
-4. The cleaning report in the `report/clean/` directory is used to update the cleaning script in the `src/clean/` directory.
-
-### Wrangle Data
-
-![](figures/wrangle.drawio.svg)
-
-1. Create a wrangling script in the `src/wrangle` directory that reads and wrangles the clean data from the `data/clean/` directory and writes to the `data/wrangle/` directory.
-2. The wragled data is stored in the `data/wrangle/` directory.
-3. Create a wrangling report in the `report/wrangle/` directory that reads the wrangled data from the `data/wrangle/` directory.
-4. The wrangling report in the `report/wrangle/` directory is used to update the wrangling script in the `src/wrangle/` directory.
