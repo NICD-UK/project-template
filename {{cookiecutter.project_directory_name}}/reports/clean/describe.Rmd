@@ -3,6 +3,7 @@
 library(glue)
 library(here)
 library(tidyverse)
+library(dlookr)
 ```
 
 # Setup
@@ -13,4 +14,9 @@ data_name <- "<data-name>"
 # Read Data
 ```{r}
 clean_data <- read_rds(here("data", "clean", glue("{data_name}.rds")))
+```
+
+# Describe Data
+```{r}
+diagnose_web_report(clean_data)
 ```
