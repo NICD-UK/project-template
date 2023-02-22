@@ -7,8 +7,12 @@
 /data/raw/*
 /data/wrangle/*
 
-# notebooks directory
+# notebook files
 /notebooks/*
 
 # directory structure
 !.gitkeep
+
+# presentation files
+/presentations/*.html
+/presentations/*_files/
