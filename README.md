@@ -1,6 +1,6 @@
 # Project Template
 
-## Usage
+## Setup
 
 To use the project template:
 
@@ -9,7 +9,7 @@ pip install cookiecutter
 cookiecutter https://github.com/NICD-UK/project-template
 ```
 
-You will be prompted for eleven inputs:
+You will be prompted for eleven answers:
 
 1. Project Name
 2. Project Directory Name
@@ -20,7 +20,7 @@ You will be prompted for eleven inputs:
 7. Project Summary
 8. Raw Data Directory
 9. Language (Python / R)
-10. `venv` Project (No / Yes) - **Python ONLY**
+10. `venv` Project (No / Yes)
 11. `git` Project (No / Yes)
 
 ## Project Structure
@@ -47,49 +47,32 @@ src/
 ├─ wrangle/
 ```
 
-![](figures/clean.drawio.svg)
+## Project Charter
 
-1. Create a cleaning script in the `src/clean` directory that imports and cleans the raw data from the `data/raw` directory and writes to the `data/clean/` directory.
-2.  The cleaned data is stored in the `data/clean/` directory.
-3.  Create a cleaning report in the `report/clean/` directory that reads the cleaned data from the `data/clean/` directory.
-4.  The cleaning report in the `report/clean/` directory is used to update the cleaning script in the `src/clean/` directory.
+The `README.md` file is the [Project Charter](https://en.wikipedia.org/wiki/Project_charter). The head of the project charter includes: the project name; the name and email of the project manager; and the name and email of the project sponsor. This is filled out with the answers to the corresponding prompts during setup. The body of the project charter includes:
 
-**Note:** There is *one* cleaning script for each data source and the cleaning scripts should only contain transformations that are independent of the data product.
+- Summary
+- Objectives
+- Deliverables
+- Resources
+- Scope
+- Costs and Benefits
+- Risks and Contingencies
 
-![](figures/wrangle.drawio.svg)
+The body of the project charter is filled out during the project scoping phase.
 
-1. Create a wrangling script in the `src/wrangle` directory that reads and wrangles the clean data from the `data/clean/` directory and writes to the `data/wrangle/` directory.
-2. The wragled data is stored in the `data/wrangle/` directory.
-3. Create a wrangling report in the `report/wrangle/` directory that reads the wrangled data from the `data/wrangle/` directory.
-4. The wrangling report in the `report/wrangle/` directory is used to update the wrangling script in the `src/wrangle/` directory.
+## Raw Data
 
-**Note:** There is *one* wrangling script for each data product and the wrangling scripts should only contain transofrmations that are dependent on the data product.
+Raw data files inside the project directory are in `data/raw/`. If the raw data files are outside the project directory: answer with the appropriate absoute path to the Raw Data Directory prompt during setup. This absolute path is in the `config.yml` file. The `config.yml` file can be different for each project collaborator.
 
+## Script Templates
 
-## Data Science Workflow
+There are template scripts for cleaning data (`src/clean/`), describing data (`reports/clean/`), wrangling data (`src/wrangle/`) and exploring data (`reports/wrangle`) available in Python and R. The project template provides Python or R temmplate scripts depending on answer to the Language prompt during setup. All template scripts include code to read from and write to the appropriate data directories. The included code uses best practice to ensure reproducability. The template scripts for describing and exploring data generate reports for the cleaned and wrangled data, respectively. There is also a template script for presenting data (`presentations/`) available in Quarto.
 
-### 1. Business Understanding
+## Virtual Evironment and Git
 
-- **Determine Objectives:**
-- **Determine Deliverables:**
-- **Determine Resources:**
-- **Plan Project:** 
+Answer Yes to the `venv` Project prompt during setup for a Python 3 virtual environment. This is recommended for Python projects. Answer Yes to the `git` Project prompt during setup for a git repository. This is recommended for *all* projects.
 
-### 2. Data Preparation and Understanding
+## Recommendations
 
-- **Import Data:** 
-- **Clean Data:**
-- **Wrangle Data:**
-
-### 3. Prototyping
-
-- **Develop Data Product:**
-- **Evaluate Data Product:**
-- **Approve Data Product:**
-
-### 4. Production
-
-- **Deploy Data Product:**
-- **Monitor Data Product:**
-- **Maintain Data Product:**
-- **Close Project:**
+For the best experience it is recommended to use the project template with [Virtual Studio Code](https://code.visualstudio.com) for Python projects and [RStudio](https://posit.co/products/open-source/rstudio/) for R projects. 
