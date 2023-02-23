@@ -18,10 +18,10 @@ You will be prompted for eleven answers:
 5. Project Sponsor Name
 6. Project Sponsor Email
 7. Project Summary
-8. Raw Data Directory
-9. Language (Python / R)
-10. `venv` Project (No / Yes)
-11. `git` Project (No / Yes)
+8. <a name="raw-data-directory">Raw Data Directory</a>
+9. <a name="language">Language</a> (**Python** / **R**)
+10. <a name="venv">`venv` Project</a> (**No** / **Yes**)
+11. <a name="git">`git` Project</a> (**No** / **Yes**)
 
 ## Project Structure
 
@@ -35,7 +35,6 @@ data/
 ├─ model/
 ├─ raw/
 ├─ wrangle/
-notebooks/
 presentations/
 reports/
 ├─ clean/
@@ -63,15 +62,27 @@ The body of the project charter is filled out during the project scoping phase.
 
 ## Raw Data
 
-Raw data files inside the project directory are in `data/raw/`. If the raw data files are outside the project directory: answer with the appropriate absoute path to the Raw Data Directory prompt during setup. This absolute path is in the `config.yml` file. The `config.yml` file can be different for each project collaborator.
+Raw data files can be stored either:
+
+1. inside the project directry in `data/raw/` or 
+2. outside the project directory.
+
+If the raw data files are stored outside the project directory answer the [Raw Data Directory](#raw-data-directory) prompt during setup with the absolute path to them. This absolute path is included in the `config.yml` file. The `config.yml` file can be different for each project collaborator.
 
 ## Script Templates
 
-There are template scripts for cleaning data (`src/clean/`), describing data (`reports/clean/`), wrangling data (`src/wrangle/`) and exploring data (`reports/wrangle`) available in Python and R. The project template provides Python or R temmplate scripts depending on answer to the Language prompt during setup. All template scripts include code to read from and write to the appropriate data directories. The included code uses best practice to ensure reproducability. The template scripts for describing and exploring data generate reports for the cleaned and wrangled data, respectively. There is also a template script for presenting data (`presentations/`) available in Quarto.
+There are template scripts for:
+
+1. cleaning data in `src/clean/`,
+2. describing data in `reports/clean/`,
+3. wrangling data in `src/wrangle/`,
+4. exploring data in `reports/wrangle`
+
+available in [Python](https://www.python.org) or [R](https://www.r-project.org). Answer **Python** or **R** to the [Language](#language) prompt during setup for the relevant scripts. All template scripts include code to read from and write to the appropriate data directories. The template scripts for describing and exploring data generate reports for the cleaned and wrangled data, respectively. There is also a template script for presenting data in `presentations/` available in [Quarto](https://quarto.org).
 
 ## Virtual Evironment and Git
 
-Answer Yes to the `venv` Project prompt during setup for a Python 3 virtual environment. This is recommended for Python projects. Answer Yes to the `git` Project prompt during setup for a git repository. This is recommended for *all* projects.
+Answer **Yes** to the [`venv` Project](#venv) prompt during setup for a Python virtual environment. This is recommended for Python projects. Answer **Yes** to the [`git` Project](#git) prompt during setup for a git repository. This is recommended for *all* projects.
 
 ## Recommendations
 
