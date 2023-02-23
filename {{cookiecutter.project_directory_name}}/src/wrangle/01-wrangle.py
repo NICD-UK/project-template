@@ -1,6 +1,6 @@
 #%% Load Libraries
-import pandas
 import os
+import pandas
 from pyprojroot import here
 
 #%% Setup
