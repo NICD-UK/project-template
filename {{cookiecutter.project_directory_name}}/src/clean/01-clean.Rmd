@@ -2,6 +2,7 @@
 ```{r message=FALSE}
 library(glue)
 library(here)
+library(config)
 library(tidyverse)
 ```
 
@@ -12,7 +13,7 @@ data_name <- "<data-name>"
 
 # Read Data
 ```{r}
-raw_data <- read_csv(here("data", "raw", glue("{data_name}.csv")))
+raw_data <- read_csv(here(config::get("raw_data_directory"), glue("{data_name}.csv")))
 ```
 
 # Clean Data
