@@ -21,6 +21,11 @@ if language == "R":
 if venv_project == "Yes":   
     subprocess.run(["python3", "-m", "venv", ".venv"], stdout=subprocess.DEVNULL)
     subprocess.run([".venv/bin/python", "-m", "pip", "install", "--upgrade", "pip"], stdout=subprocess.DEVNULL)
+    subprocess.run([".venv/bin/python", "-m", "pip", "install", "-r", "requirements.txt"], stdout=subprocess.DEVNULL)
+
+# remove requirements.txt
+if language == "R" and venv_project == "No":
+    os.remove("requirements.txt") 
 
 # gitignore config.yml
 with open(".gitignore", "a") as f:
