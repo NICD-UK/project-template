@@ -2,7 +2,6 @@
 ```{r message=FALSE}
 library(glue)
 library(here)
-library(config)
 library(tidyverse)
 ```
 

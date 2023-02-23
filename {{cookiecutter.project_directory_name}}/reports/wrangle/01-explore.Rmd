@@ -1,9 +1,9 @@
 # Load Libraries
 ```{r message=FALSE}
+library(dlookr)
 library(glue)
 library(here)
 library(tidyverse)
-library(dlookr)
 ```
 
 # Setup
