@@ -64,7 +64,7 @@ The body of the project charter is filled out during the project scoping phase.
 
 Raw data files can be stored either:
 
-1. inside the project directry in `data/raw/` or 
+1. inside the project directory in `data/raw/` or 
 2. outside the project directory.
 
 If the raw data files are stored outside the project directory answer the [Raw Data Directory](#raw-data-directory) prompt during setup with the absolute path to them. This absolute path is included in the `config.yml` file. The `config.yml` file can be different for each project collaborator.
