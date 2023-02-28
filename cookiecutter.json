@@ -6,8 +6,5 @@
     "project_sponsor_name": "Project Sponsor Name",
     "project_sponsor_email": "Project Sponsor Email",
     "project_summary": "Project Summary",
-    "raw_data_directory": "data/raw",
-    "language": ["Python", "R"],
-    "venv_project": ["No", "Yes"],
-    "git_project": ["No", "Yes"]
+    "language": ["Python", "R"]
 }
