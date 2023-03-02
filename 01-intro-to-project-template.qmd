@@ -1,0 +1,28 @@
+---
+title: "Introducing NICD Project Template"
+author: "Tam and Cam"
+format: revealjs
+---
+
+## Background
+
+- NICD clients have expressed an interest in __automating project structure generation for data science__ 
+- While there are existing project templates including [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) for __Python__ and [ProjectTemplate](http://projecttemplate.net) for __R__, these templates suffer from several __drawbacks__, such as:
+
+    - _being language-specific_
+    - _not enforcing latest good practice_
+    - _being narrowly applicable_
+
+- Previously, there were two teams working independently on developing better project templates for data science; this project template attempts to __unify__ these efforts.
+
+## What makes a good project template?
+
+Aside from __automation__ and __reproducibility__, a good project template for data science should be:
+
+1. broadly applicable
+2. encourage good practice
+3. language agnostic
+4. easy to use
+5. compatible with the NICD workflow
+
+
