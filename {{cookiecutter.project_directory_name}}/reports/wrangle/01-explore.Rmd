@@ -13,7 +13,7 @@ data_name <- "<data-name>"
 
 # Read Data
 ```{r}
-wrangle_data <- read_rds(here("data", "wrangle", glue("{data_name}.rds")))
+wrangle_data <- read_rds(here(glue("data/wrangle/{data_name}.rds")))
 ```
 
 # Explore Data

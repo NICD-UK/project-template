@@ -1,16 +1,16 @@
 #%% Load Libraries
-import os
 import pandas
-from pyprojroot import here
+from pathlib import Path
 
 #%% Setup
+root_path = Path(__file__).parent.parent.parent
 data_name = "<data-name>"
 
 #%% Read Data
-clean_data = pandas.read_pickle(os.path.join(here(), "data", "clean", f"{data_name}.pkl"))
+clean_data = pandas.read_pickle(root_path / f"data/clean/{data_name}.pkl")
 
 #%% Clean Data
 wrangle_data = clean_data
 
 #%% Write Data
-wrangle_data.to_pickle(os.path.join(here(), "data", "wrangle", f"{data_name}.pkl"))
+wrangle_data.to_pickle(root_path / f"data/wrangle/{data_name}.pkl")

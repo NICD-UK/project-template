@@ -18,8 +18,7 @@ You will be prompted for the following answers:
 5. Project Sponsor Name
 6. Project Sponsor Email
 7. Project Summary
-8. <a name="raw-data-directory">Raw Data Directory</a>
-9. <a name="language">Language</a> (**Python** / **R**)
+8. <a name="language">Language</a>: **Python** or **R**
 
 ## Project Structure
 
@@ -66,21 +65,6 @@ There are template scripts for:
 4. exploring data in `reports/wrangle`
 
 available in [Python](https://www.python.org) or [R](https://www.r-project.org). Answer **Python** or **R** to the [Language](#language) prompt during setup for the relevant scripts. All template scripts include code to read from and write to the appropriate data directories. The template scripts for describing and exploring data generate reports for the cleaned and wrangled data, respectively. There is also a template script for presenting data in `presentations/` available in [Quarto](https://quarto.org).
-
-## Virtual Evironment and Git
-
-To setup `venv`:
-
-```
-make venv
-make requirements
-```
-
-To steup `git`:
-
-```
-make git
-```
 
 ## Recommendations
 
