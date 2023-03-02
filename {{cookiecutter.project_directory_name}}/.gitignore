@@ -1,5 +1,7 @@
 # venv directory
-/.venv/
+/venv/*
+/renv/*
+!renv/activate.R
 
 # data directory
 /data/clean/*
