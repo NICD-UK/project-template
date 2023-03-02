@@ -12,7 +12,7 @@ venv:
 	Rscript -e 'renv::install("dlookr")'
 	Rscript -e 'renv::install("glue")'
 	Rscript -e 'renv::install("here")'
-	Rscript -e 'renv::install("tidyverse")'
+	Rscript -e 'renv::install("readr")'
 
 save:
 	Rscript -e 'renv::snapshot()'
