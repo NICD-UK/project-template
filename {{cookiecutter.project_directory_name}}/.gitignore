@@ -1,14 +1,19 @@
-# .venv directory
-/.venv/
+# venv directory
+/venv/*
+/renv/*
+!renv/activate.R
 
 # data directory
 /data/clean/*
-/data/model/*
 /data/raw/*
 /data/wrangle/*
 
-# notebooks directory
-/notebooks/*
+# models directory
+/models/*
 
 # directory structure
 !.gitkeep
+
+# presentation files
+/presentations/*.html
+/presentations/*_files/

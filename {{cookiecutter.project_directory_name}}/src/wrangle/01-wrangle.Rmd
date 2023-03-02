@@ -2,7 +2,7 @@
 ```{r message=FALSE}
 library(glue)
 library(here)
-library(tidyverse)
+library(readr)
 ```
 
 # Setup
@@ -12,7 +12,7 @@ data_name <- "<data-name>"
 
 # Read Data
 ```{r}
-clean_data <- read_rds(here("data", "clean", glue("{data_name}.rds")))
+clean_data <- read_rds(here(glue("data/clean/{data_name}.rds")))
 ```
 
 # Wrangle Data
@@ -22,5 +22,5 @@ wrangle_data <- clean_data
 
 # Write Data
 ```{r}
-write_rds(wrangle_data, here("data", "wrangle", glue("{data_name}.rds")))
+write_rds(wrangle_data, here(glue("data/wrangle/{data_name}.rds")))
 ```
