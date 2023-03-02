@@ -15,6 +15,18 @@ format: revealjs
 
 - Previously, there were two teams working independently on developing better project templates for data science; this project template attempts to __unify__ these efforts.
 
+## Team 1
+
+![](figures/matt.jpeg){fig-align="center"}
+
+## Team 2
+
+![](figures/mac.jpeg){fig-align="center"}
+
+## The Unified Team
+
+![](figures/cam-tam-blend.png){fig-align="center"}
+
 ## What makes a good project template?
 
 Aside from __automation__ and __reproducibility__, a good project template for data science should be:
@@ -25,4 +37,12 @@ Aside from __automation__ and __reproducibility__, a good project template for d
 4. easy to use
 5. compatible with the NICD workflow
 
+## 1. Broadly applicable
 
+## 2. Encourage good practice
+
+## 3. Language agnostic
+
+## 4. Easy to use
+
+## 5. Compatible with the NICD workflow
