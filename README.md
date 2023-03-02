@@ -68,4 +68,4 @@ available in [Python](https://www.python.org) or [R](https://www.r-project.org).
 
 ## Recommendations
 
-For the best experience it is recommended to use the project template with [Virtual Studio Code](https://code.visualstudio.com) for Python projects and [RStudio](https://posit.co/products/open-source/rstudio/) for R projects. 
+For the best experience it is recommended to use the project template with [Visual Studio Code](https://code.visualstudio.com) for Python projects and [RStudio](https://posit.co/products/open-source/rstudio/) for R projects. 
