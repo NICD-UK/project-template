@@ -1,4 +1,0 @@
-ipykernel
-pandas
-pathlib
-ydata-profiling

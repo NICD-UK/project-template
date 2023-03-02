@@ -1,0 +1,29 @@
+.PHONY: all venv save load git
+
+#################################################################################
+# COMMANDS                                                                      #
+#################################################################################
+
+all:
+	venv
+	save
+	git
+
+venv:
+	Rscript -e 'install.packages("renv")'
+	Rscript -e 'renv::init()'
+	Rscript -e 'renv::install("dlookr")'
+	Rscript -e 'renv::install("glue")'
+	Rscript -e 'renv::install("here")'
+	Rscript -e 'renv::install("tidyverse")'
+
+save:
+	Rscript -e 'renv::snapshot()'
+
+load:
+	Rscript -e 'renv::restore()'
+
+git:
+	git init
+	git add --all
+	git commit -m "initial commit"

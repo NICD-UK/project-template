@@ -20,6 +20,45 @@ You will be prompted for the following answers:
 7. Project Summary
 8. <a name="language">Language</a>: **Python** or **R**
 
+Then run:
+
+```
+make
+```
+
+This command will:
+
+1. Initialise a virtual environment
+    - `venv` for Python
+    - `renv` for R
+2. Install the packages required for the template scipts
+3. Save the packages to a dependencies file
+    - `requirements.txt` for Python
+    - `renv.lock` for R
+4. Initialise a git repository
+
+## Package Management
+
+To install a package in Python run:
+
+```
+venv/bin/pip install <package>
+```
+
+To install a package in R use the Packages tab in RStudio.
+
+To save the installed packages to the dependencies file run:
+
+```
+make save
+```
+
+To load the packages from the dependencies file run:
+
+```
+make load
+```
+
 ## Project Structure
 
 The project has the following structure:
