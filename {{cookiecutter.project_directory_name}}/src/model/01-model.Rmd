@@ -2,7 +2,7 @@
 ```{r message=FALSE}
 library(glue)
 library(here)
-library(tidyverse)
+library(readr)
 ```
 
 # Setup
