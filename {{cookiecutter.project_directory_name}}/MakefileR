@@ -8,7 +8,7 @@ all: venv save git
 
 venv:
 	Rscript -e 'install.packages("renv", repos = "https://cloud.r-project.org/")'
-	Rscript -e 'renv::init()'
+	Rscript -e 'renv::init(bare = TRUE)'
 	Rscript -e 'renv::install("dlookr")'
 	Rscript -e 'renv::install("glue")'
 	Rscript -e 'renv::install("here")'
