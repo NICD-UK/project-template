@@ -1,4 +1,9 @@
+<img src="figures/logo.png" width=300 align="right">
+
 # Project Template
+
+![](https://img.shields.io/github/v/release/NICD-UK/project-template?color=4ce48c&include_prereleases)
+![](https://img.shields.io/github/license/NICD-UK/project-template)
 
 ## Setup
 
@@ -46,6 +51,8 @@ venv/bin/pip install <package>
 ```
 
 To install a package in R use the Packages tab in RStudio.
+
+<img src="figures/rstudio-packages.png" height=80>
 
 To save the installed packages to the dependencies file run:
 
