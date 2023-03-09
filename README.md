@@ -1,4 +1,4 @@
-<img src="figures/logo.png" width=300 align="right">
+<img src="figures/logo.png" width=400 align="right">
 
 # Project Template
 
