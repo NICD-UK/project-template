@@ -1,0 +1,172 @@
+---
+title: "Introducing the NICD Project Template"
+author: "Mac Misiura and Matthew Edwards"
+format: 
+    revealjs:
+        slide-number: true
+---
+
+## NICD Skills Projects
+
+__NICD Skills Projects__ typically take the following form:
+
+![](figures/skills-project.png){fig-align="center"}
+
+Several different tools are used to streamline running of these projects, including: __Innovation Story Canvas__, __Sprint Cards__, __Project Charter__ and so on
+
+## Motivation Behind the NICD Project Template
+
+- NICD clients have expressed an interest in __automating project structure generation for data science__ 
+- While there are existing project templates including [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) and [ProjectTemplate](http://projecttemplate.net), these templates suffer from several __drawbacks__ (covered in the latter slides)
+- Previously, there were two teams working independently on developing better project templates for data science; this project template attempts to __unify__ these efforts.
+
+## Team 1
+
+![](figures/matt.jpeg){fig-align="center"}
+
+## Team 2
+
+![](figures/mac.jpeg){fig-align="center"}
+
+## The Unified Team
+
+[Courtesy of Midjourney V4 blend functionality](https://docs.midjourney.com/docs/blend):
+
+![](figures/cam-tam-blend.png){fig-align="center"}
+
+## What makes a good project template?
+
+Aside from __automation__ and __reproducibility__, a good project template for data science should be:
+
+1. _broadly applicable_
+2. _encourage good practice_
+3. _language agnostic_
+4. _easy to use_
+5. _compatible with the NICD workflow_
+
+## 1. Broadly applicable
+
+- The project template should reflect different data science products mentioned in the [Project Kick-off Slides](https://newcastle.sharepoint.com/:f:/r/sites/DigitalInstitute581/Shared%20Documents/NICD/Activities/Data%20Skills/Project%20Kick-off?csf=1&web=1&e=3hgxin), i.e.
+
+    - _description products_
+    - _estimation and attribution products_
+    - _prediction products_
+
+- Most available project templates focus on __prediction products__ and thus, fail to satisfy this condition
+
+## 2. Encourage good practice
+
+- While flexibility is important, the project template needs to be reasonably opinionated to encourage good practice
+- Good practice should start with:
+
+    1. code version control
+    2. package management
+    3. project structure and organisation
+
+- These three elements reflect the most pressing needs of the majority of NICD clients
+
+## 3. Language agnostic
+
+- The project template should be __language agnostic__ to accommodate different programming languages for data science
+- At minimum, it should support __R__ and __Python__ since they are the most popular languages for data science
+- [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) is solely Python-focussed and [ProjectTemplate](http://projecttemplate.net) is solely R-focussed
+- To our knowledge, only [govcookiecutter](https://github.com/best-practice-and-impact/govcookiecutter) is language agnostic but it is not straightforward to use
+
+## 4. Easy to use
+
+- The project template scripts should include some boilerplate code to allow the user to __quickly get started__ with their project and support __reproducibility__
+- This boilerplate code should encourage the correct use of the project structure and organisation
+- There should be __minimal user input__ required to:
+
+    - generate the project structure and organisation
+    - iniatlise a virtual environment
+    - iniatlise a git repository
+
+## 5. Compatible with the NICD workflow
+
+- Most project templates have script directories like: `clean/`, `munge/`, `featurise/`. However, they do not provide guidance on exactly what scripts these directories should contain. Furthermore, these terminologies are used inconsistently across different project templates.
+- The project template should be __compatible with the NICD workflow__ and provide guidance on how to use the project structure and organisation
+
+## Current State-of-Play
+
+Version 0.1.0 of the [NICD project template](https://github.com/NICD-UK/project-template) has the following features:
+
+- data, scripts and reports are organised into __cleaning__ and __wrangling__, which are strictly defined
+- template reports for describing __cleaned data__ and exploring __wrangled data__
+- template scripts for __quarto presentations__
+- usage of __scripts__ rather than __notebooks__
+- integrated __project charter__
+- __single, language agnostic command__ `make` to setup virtual environment and git repository 
+
+## Usage
+
+In the command line move to where you want to create the project directory and run:
+
+```bash
+cookiecutter https://github.com/NICD-UK/project-template
+```
+
+You will be prompted for the:
+
+:::: {.columns}
+::: {.column width="50%"}
+1. Project Name
+2. Project Directory Name
+3. Project Manager Name
+4. Project Manager Email
+:::
+::: {.column width="50%"}
+5. Project Sponsor Name
+6. Project Sponsor Email
+7. Project Summary
+8. Language: **Python** or **R**
+:::
+::::
+
+## Usage
+
+In the command line run:
+
+```bash
+make
+```
+
+This command will:
+
+:::: {.columns}
+::: {.column width="50%"}
+1. Initialise a [reproducible environment](https://the-turing-way.netlify.app/reproducible-research/renv.html):
+    - `venv` for Python
+    - `renv` for R
+2. Install the packages required for the template scipts
+:::
+::: {.column width="50%"}
+3. Save the packages to a dependencies file:
+    - `requirements.txt` for Python
+    - `renv.lock` for R
+4. Initialise a git repository for [version control](https://the-turing-way.netlify.app/reproducible-research/vcs.html)
+:::
+::::
+
+## An illustration
+
+![](figures/demo.gif){fig-align="center"}
+
+## Immediate Future
+
+- Development of new features is managed through a [GitHub Projects Board](https://github.com/orgs/NICD-UK/projects/9)
+
+- The following features are in the __backlog__:
+
+    - configuration file for automation
+    - data version control with [DVC](https://dvc.org)
+    - formatting and linting with [pre-commit](https://pre-commit.com)
+    - data pipelining with e.g. [Snakemake](https://snakemake.readthedocs.io/en/stable/)
+    - data science checklists for cleaning, wrangling and modelling
+    - testing 
+    - tagging
+
+## Feedback
+
+- We encourage you to provide feedback on the project template through the [Github Discussions](https://github.com/NICD-UK/project-template/discussions)
+- We are also open to suggestions for new features
