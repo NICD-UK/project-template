@@ -6,5 +6,5 @@
     "project_sponsor_name": "Project Sponsor Name",
     "project_sponsor_email": "Project Sponsor Email",
     "project_summary": "Project Summary",
-    "language": ["Python", "R"]
+    "project_language": ["Python", "R"]
 }
