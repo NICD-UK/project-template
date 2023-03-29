@@ -12,6 +12,8 @@ venv:
 	venv/bin/pip install ipykernel 
 	venv/bin/pip install pandas 
 	venv/bin/pip install pathlib 
+	venv/bin/pip install pyyaml
+	venv/bin/pip install scikit-learn
 	venv/bin/pip install ydata-profiling
 
 save:
