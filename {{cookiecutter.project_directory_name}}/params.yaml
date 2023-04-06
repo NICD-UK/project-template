@@ -1,4 +1,6 @@
-model:
+default:
   target: "target"
-  test_size: 0.2
-  random_state: 42
+  split: 
+    train: 0.8
+    test: 0.2
+  seed: 42
