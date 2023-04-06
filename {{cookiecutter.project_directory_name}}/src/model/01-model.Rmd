@@ -19,8 +19,8 @@ wrangle_data <- read_rds(here(glue("data/wrangle/{data_name}.rds")))
 
 # Split Data
 ```{r}
-set.seed(params["seed"])
-split <- initial_split(wrangle_data, prop = params["split"]["train"])
+set.seed(params$seed)
+split <- initial_split(wrangle_data, prop = params$split$train)
 train_data <- training(split)
 test_data <- testing(split)
 ```
