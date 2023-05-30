@@ -1,10 +1,4 @@
 {
     "project_name": "Project Name",
-    "project_directory_name": "{{cookiecutter.project_name | lower | replace(' ', '-')}}",
-    "project_manager_name": "Project Manager Name",
-    "project_manager_email": "Project Manager Email",
-    "project_sponsor_name": "Project Sponsor Name",
-    "project_sponsor_email": "Project Sponsor Email",
-    "project_summary": "Project Summary",
-    "project_language": ["Python", "R"]
+    "project_directory_name": "{{cookiecutter.project_name | lower | replace(' ', '-')}}"
 }
