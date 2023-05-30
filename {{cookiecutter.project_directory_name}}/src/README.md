@@ -1,6 +1,4 @@
-# Transformation Checklist
-
-## Motivation
+# Transformation Checklists
 
 ## Cleaning Checklist
 
@@ -18,9 +16,9 @@ For each data product:
 - [ ] ...
 - [ ] write data to `/data/wrangle/`
 
-## Processing
+## Preprocessing Checklist
 
-For models:
+For each model:
 
 
 
