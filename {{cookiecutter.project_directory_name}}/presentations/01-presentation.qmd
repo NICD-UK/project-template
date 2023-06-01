@@ -1,6 +1,6 @@
 ---
 title: "Presentation"
-author: "{{cookiecutter.project_manager_name}}"
+author: ""
 format: revealjs
 ---
 
