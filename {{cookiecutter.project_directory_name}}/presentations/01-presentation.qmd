@@ -1,7 +1,0 @@
----
-title: "Presentation"
-author: ""
-format: revealjs
----
-
-## Introduction
