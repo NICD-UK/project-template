@@ -5,7 +5,7 @@
 ![](https://img.shields.io/github/v/release/NICD-UK/project-template?color=4ce48c&include_prereleases)
 ![](https://img.shields.io/github/license/NICD-UK/project-template)
 
-The `project-template` package can create a [project sturcture](#project-structure) and [template scripts](#templates-scripts) for a data science project. The package also provides tools to automate common data science tasks. The package has been developed to be used with [Visual Studio Code](https://code.visualstudio.com) for Python projects and [RStudio](https://posit.co/products/open-source/rstudio/) for R projects.
+The `project-template` package can create a **data science** [project sturcture](#project-structure) and [template scripts](#templates-scripts) for both Python and R projects. The package also provides tools to automate common data science tasks. The package has been developed to be used with [Visual Studio Code](https://code.visualstudio.com) for Python projects and [RStudio](https://posit.co/products/open-source/rstudio/) for R projects.
 
 ## Create
 
@@ -24,7 +24,7 @@ You will be prompted for the:
 5. Project Sponsor Name
 6. Project Sponsor Email
 7. Project Summary
-8. <a name="language">Project Language</a>
+8. <a name="language">Language</a>: **Python** or **R**
 
 In the command line run:
 
@@ -72,7 +72,6 @@ make load
 The project has the following structure:
 
 ```
-Makefile
 README.md
 data/
 ├─ clean/
