@@ -2,7 +2,7 @@ import subprocess
 import glob
 import os
 
-language = "{{cookiecutter.language}}"
+language = "{{cookiecutter.project_language}}"
 
 # create Python project
 if language == "Python":
