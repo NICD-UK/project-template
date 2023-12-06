@@ -79,13 +79,15 @@ data/
 ├─ raw/
 ├─ wrangle/
 models/
-notebooks/
 presentations/
+reports/
+├─ clean/
+├─ wrangle/
 src/
-├─ 1-import/
-├─ 2-clean/
-├─ 3-wrangle/
-├─ 4-model/
+├─ clean/
+├─ import/
+├─ model/
+├─ wrangle/
 ```
 
 ## Template Scripts
