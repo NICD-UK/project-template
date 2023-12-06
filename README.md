@@ -79,24 +79,22 @@ data/
 ├─ raw/
 ├─ wrangle/
 models/
+notebooks/
 presentations/
-reports/
-├─ clean/
-├─ wrangle/
 src/
-├─ clean/
-├─ import/
-├─ model/
-├─ wrangle/
+├─ 1-import/
+├─ 2-clean/
+├─ 3-wrangle/
+├─ 4-model/
 ```
 
 ## Template Scripts
 
 There are template scripts for:
 
-1. cleaning data in `src/clean/`,
-2. describing data in `reports/clean/`,
-3. wrangling data in `src/wrangle/`,
-4. exploring data in `reports/wrangle`
+1. transforming raw data into **cleaned** data in `src/clean/`,
+2. visualising **cleaned** data in `src/clean/`,
+3. transforming cleaned data into **wrangled** in `src/wrangle/`,
+4. visualising **wrangled** data in `src/wrangle`
 
 available in [Python](https://www.python.org) or [R](https://www.r-project.org). Answer **Python** or **R** to the [Language](#language) prompt during setup for the relevant template scripts. All template scripts include code to read from and write to the appropriate data directories. The template scripts for describing and exploring data generate reports for the cleaned and wrangled data, respectively. There is also a template script for presenting data in `presentations/` available in [Quarto](https://quarto.org).
