@@ -80,14 +80,11 @@ data/
 ├─ wrangle/
 models/
 presentations/
-reports/
-├─ clean/
-├─ wrangle/
 src/
-├─ clean/
-├─ import/
-├─ model/
-├─ wrangle/
+├─ 1-import/
+├─ 2-clean/
+├─ 3-wrangle/
+├─ 4-model/
 ```
 
 ## Template Scripts
