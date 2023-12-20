@@ -18,5 +18,8 @@ clean_data <- read_rds(here(glue("data/clean/{data_name}.rds")))
 
 # Describe Data
 ```{r}
-diagnose_web_report(clean_data)
+diagnose_web_report(clean_data, 
+  output_file = data_name,
+  output_dir = here("reports/clean/")
+)
 ```

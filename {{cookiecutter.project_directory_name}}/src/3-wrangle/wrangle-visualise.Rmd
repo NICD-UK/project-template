@@ -18,5 +18,8 @@ wrangle_data <- read_rds(here(glue("data/wrangle/{data_name}.rds")))
 
 # Explore Data
 ```{r}
-eda_web_report(wrangle_data)
+eda_web_report(wrangle_data, 
+  output_file = data_name,
+  output_dir = here("reports/clean/")
+)
 ```
