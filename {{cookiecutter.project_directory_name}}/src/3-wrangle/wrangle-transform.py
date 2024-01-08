@@ -9,7 +9,7 @@ data_name = "<data-name>"
 #%% Read Data
 clean_data = pandas.read_pickle(root_path / f"data/clean/{data_name}.pkl")
 
-#%% Clean Data
+#%% Wrangle Data
 wrangle_data = clean_data
 
 #%% Write Data
