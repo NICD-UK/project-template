@@ -11,6 +11,13 @@
 # models directory
 /models/*
 
+# notebooks directory
+/notebooks/*
+
+# reports directory
+/reports/clean/*
+/reports/wrangle/*
+
 # directory structure
 !.gitkeep
 
