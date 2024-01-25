@@ -8,15 +8,19 @@ language = "{{cookiecutter.project_language}}"
 if language == "Python":
     with open(".python-version", "w") as file:
         file.write(platform.python_version())
-    os.remove("MakefileR")
-    os.rename("MakefilePython", "Makefile")
+    os.remove("Makefile-r")
+    os.rename("Makefile-python", "Makefile")
+    os.remove("checklist-r.md")
+    os.rename("checklist-python.md", "checklist.md")
     os.remove("{{cookiecutter.project_directory_name}}.Rproj")
     for file in glob.glob("**/*.Rmd", recursive=True):
         os.remove(file)
 
 # create R project
 if language == "R":
-    os.remove("MakefilePython")
-    os.rename("MakefileR", "Makefile")
+    os.remove("Makefile-python")
+    os.rename("Makefile-r", "Makefile")
+    os.remove("checklist-python.md")
+    os.rename("checklist-r.md", "checklist.md")
     for file in glob.glob("**/*.py", recursive=True):
         os.remove(file)
