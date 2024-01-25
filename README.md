@@ -7,12 +7,20 @@
 
 The `project-template` package can create a [project sturcture](#project-structure) and [template scripts](#templates-scripts) for a data science project. The package also provides tools to automate common data science tasks. The package has been developed to be used with [Visual Studio Code](https://code.visualstudio.com) for Python projects and [RStudio](https://posit.co/products/open-source/rstudio/) for R projects.
 
+## Install
+
+In the command line run:
+
+```bash
+pip3 install cookiecutter
+```
+
 ## Create
 
 In the command line move to where you want to create the project directory and run:
 
 ```bash
-cookiecutter https://github.com/NICD-UK/project-template
+python3 -m cookiecutter https://github.com/NICD-UK/project-template
 ```
 
 You will be prompted for the:
@@ -55,13 +63,13 @@ To install a package in R use the Packages tab in RStudio.
 
 <img src="figures/rstudio-packages.png" height=80>
 
-To save the packages to a dependencies file run:
+To save the packages to the dependencies file run:
 
 ```
 make save
 ```
 
-To load the packages from a dependencies file run:
+To load the packages from the dependencies file run:
 
 ```
 make load

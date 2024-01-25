@@ -22,5 +22,5 @@ load:
 
 git:
 	git init
-	git add --all
+	git add -A
 	git commit -m "initial commit"
