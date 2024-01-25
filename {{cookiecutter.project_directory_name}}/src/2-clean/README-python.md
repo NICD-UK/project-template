@@ -33,7 +33,7 @@ raw_data = raw_data.astype({
 
 ## Format Missing Values
 
-Make sure missing values are correctly formatted e.g., `NA`s that are zeros
+Make sure missing values are correctly formatted e.g., `NA`s that should be zeros
 
 ```python
 raw_data = raw_data.fillna({

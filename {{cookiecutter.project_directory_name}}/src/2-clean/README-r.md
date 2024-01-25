@@ -35,7 +35,7 @@ raw_data <- raw_data %>%
 
 ## Format Missing Values
 
-Make sure missing values are correctly formatted e.g., `NA`s that are zeros
+Make sure missing values are correctly formatted e.g., `NA`s that should be zeros
 
 ```r
 raw_data <- raw_data %>%
