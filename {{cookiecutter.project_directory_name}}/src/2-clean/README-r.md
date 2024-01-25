@@ -1,6 +1,6 @@
 # Data Cleaning
 
-Data cleaning transfomrations and tests are independent of the data product. There are three transformations and three tests that are required data cleaning:
+Data cleaning transfomrations and tests are independent of the data product. There are three transformations and three tests that are required for data cleaning:
 
 - [ ] Format Column Names
 - [ ] Format Column Types
