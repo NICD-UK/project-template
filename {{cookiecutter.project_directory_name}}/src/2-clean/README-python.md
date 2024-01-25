@@ -1,4 +1,4 @@
-# Cleaning Checklist
+# Data Cleaning
 
 Data cleaning transfomrations and tests are independent of the data product. There are three transformations and three tests that are required data cleaning:
 

@@ -10,8 +10,8 @@ if language == "Python":
         file.write(platform.python_version())
     os.remove("Makefile-r")
     os.rename("Makefile-python", "Makefile")
-    os.remove("checklist-r.md")
-    os.rename("checklist-python.md", "checklist.md")
+    os.remove("README-r.md")
+    os.rename("README-python.md", "README.md")
     os.remove("{{cookiecutter.project_directory_name}}.Rproj")
     for file in glob.glob("**/*.Rmd", recursive=True):
         os.remove(file)
@@ -20,7 +20,7 @@ if language == "Python":
 if language == "R":
     os.remove("Makefile-python")
     os.rename("Makefile-r", "Makefile")
-    os.remove("checklist-python.md")
-    os.rename("checklist-r.md", "checklist.md")
+    os.remove("README-python.md")
+    os.rename("README-r.md", "README.md")
     for file in glob.glob("**/*.py", recursive=True):
         os.remove(file)
