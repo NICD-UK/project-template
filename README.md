@@ -101,9 +101,9 @@ src/
 
 There are template scripts for:
 
-1. transforming raw data into cleaned data in `src/1-clean/`,
-2. visualising cleaned data in `src/1-clean/`,
-3. transforming cleaned data into wrangled data in `src/2-wrangle/`,
-4. visualising wrangled data in `src/2-wrangle`
+1. transforming raw data into cleaned data in `src/2-clean/`,
+2. visualising cleaned data in `src/2-clean/`,
+3. transforming cleaned data into wrangled data in `src/3-wrangle/`,
+4. visualising wrangled data in `src/3-wrangle`
 
 available in [Python](https://www.python.org) or [R](https://www.r-project.org). Answer **Python** or **R** to the [Language](#language) prompt during setup for the corresponding template scripts. All template transformation scripts include code to read data from and write data to the appropriate data directories. All template visualisation scripts include code to read data from the appropriate data directory and to generate a data report. There is also a template script for presenting data in `presentations/` available in [Quarto](https://quarto.org).
