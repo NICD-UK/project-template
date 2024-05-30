@@ -1,6 +1,6 @@
 # Data Cleaning
 
-Data cleaning transfomrations and tests are independent of the data product. There are three transformations and three tests that are required for data cleaning:
+Data cleaning transformations and tests are independent of the data product. There are three transformations and three tests that are required for data cleaning:
 
 - [ ] Format Column Names
 - [ ] Format Column Types
@@ -23,7 +23,7 @@ raw_data <- raw_data %>%
 
 ## Format Column Types
 
-Make sure column types are apporopriately formatted e.g., `numeric`, `factor`, `datetime`
+Make sure column types are appropriately formatted e.g., `numeric`, `factor`
 
 ```r
 raw_data <- raw_data %>%

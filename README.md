@@ -42,14 +42,14 @@ make
 
 This command will:
 
-1. Initialise a [reproducible environment](https://the-turing-way.netlify.app/reproducible-research/renv.html):
+1. Initialise a virtual environment:
     - `venv` for Python
     - `renv` for R
-2. Install the packages required for the template scipts
+2. Install the packages required for the template scripts
 3. Save the packages to a dependencies file:
     - `requirements.txt` for Python
     - `renv.lock` for R
-4. Initialise a git repository for [version control](https://the-turing-way.netlify.app/reproducible-research/vcs.html)
+4. Initialise a git repository
 
 ## Usage
 
@@ -63,13 +63,13 @@ To install a package in R use the Packages tab in RStudio.
 
 <img src="figures/rstudio-packages.png" height=80>
 
-To save the packages to the dependencies file run:
+To save packages to the dependencies file run:
 
 ```
 make save
 ```
 
-To load the packages from the dependencies file run:
+To load packages from the dependencies file run:
 
 ```
 make load
@@ -101,9 +101,9 @@ src/
 
 There are template scripts for:
 
-1. transforming raw data into cleaned data in `src/1-clean/`,
-2. visualising cleaned data in `src/1-clean/`,
-3. transforming cleaned data into wrangled data in `src/2-wrangle/`,
-4. visualising wrangled data in `src/2-wrangle`
+1. transforming raw data into cleaned data in `src/2-clean/`,
+2. visualising cleaned data in `src/2-clean/`,
+3. transforming cleaned data into wrangled data in `src/3-wrangle/`,
+4. visualising wrangled data in `src/3-wrangle`
 
 available in [Python](https://www.python.org) or [R](https://www.r-project.org). Answer **Python** or **R** to the [Language](#language) prompt during setup for the corresponding template scripts. All template transformation scripts include code to read data from and write data to the appropriate data directories. All template visualisation scripts include code to read data from the appropriate data directory and to generate a data report. There is also a template script for presenting data in `presentations/` available in [Quarto](https://quarto.org).

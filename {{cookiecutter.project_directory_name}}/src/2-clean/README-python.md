@@ -1,6 +1,6 @@
 # Data Cleaning
 
-Data cleaning transfomrations and tests are independent of the data product. There are three transformations and three tests that are required for data cleaning:
+Data cleaning transformations and tests are independent of the data product. There are three transformations and three tests that are required for data cleaning:
 
 - [ ] Format Column Names
 - [ ] Format Column Types
@@ -22,7 +22,7 @@ raw_data = raw_data.rename(columns={
 
 ## Format Column Types
 
-Make sure column types are apporopriately formatted e.g., `float`, `category`
+Make sure column types are appropriately formatted e.g., `float`, `category`
 
 ```python
 raw_data = raw_data.astype({

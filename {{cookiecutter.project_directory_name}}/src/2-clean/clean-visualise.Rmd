@@ -1,4 +1,4 @@
-# Load Libraries
+# Load Packages
 ```{r message=FALSE}
 library(dlookr)
 library(glue)
