@@ -1,6 +1,6 @@
 # Data Cleaning
 
-Data cleaning transformations and tests are independent of the data product. There are three transformations and three tests that are required for data cleaning:
+Data cleaning transformations and [quality tests](https://www.gov.uk/government/news/meet-the-data-quality-dimensions) are independent of the data product. There are three transformations and three quality tests associated with data cleaning:
 
 - [ ] Format Column Names
 - [ ] Format Column Types
