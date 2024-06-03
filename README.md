@@ -2,8 +2,8 @@
 
 # Project Template
 
-![](https://img.shields.io/github/v/release/NICD-UK/project-template?color=4ce48c&include_prereleases)
-![](https://img.shields.io/github/license/NICD-UK/project-template)
+![](https://img.shields.io/github/v/release/NICD-UK/project-template?color=f7f8fb&include_prereleases)
+![](https://img.shields.io/github/license/NICD-UK/project-template?color=4ce48c)
 
 The `project-template` package can create a [project sturcture](#project-structure) and [template scripts](#templates-scripts) for a data science project. The package also provides tools to automate common data science tasks. The package has been developed to be used with [Visual Studio Code](https://code.visualstudio.com) for Python projects and [RStudio](https://posit.co/products/open-source/rstudio/) for R projects.
 
