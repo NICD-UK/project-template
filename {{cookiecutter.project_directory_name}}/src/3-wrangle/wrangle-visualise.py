@@ -5,7 +5,7 @@ from ydata_profiling import ProfileReport
 
 #%% Setup
 root_path = Path(__file__).parent.parent.parent
-data_name = "<data-name>"
+data_name = "income"
 
 #%% Read Data
 wrangle_data = pandas.read_pickle(root_path / f"data/wrangle/{data_name}.pkl")

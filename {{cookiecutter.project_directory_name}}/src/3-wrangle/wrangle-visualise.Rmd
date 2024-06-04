@@ -8,7 +8,7 @@ library(readr)
 
 # Setup
 ```{r}
-data_name <- "<data-name>"
+data_name <- "income"
 ```
 
 # Read Data
@@ -20,6 +20,6 @@ wrangle_data <- read_rds(here(glue("data/wrangle/{data_name}.rds")))
 ```{r}
 eda_web_report(wrangle_data, 
   output_file = data_name,
-  output_dir = here("reports/clean/")
+  output_dir = here("reports/wrangle/")
 )
 ```

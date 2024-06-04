@@ -15,14 +15,14 @@ Make sure column names are consistently formatted e.g., `snake_case`, `PascalCas
 
 ```python
 raw_data = raw_data.rename(columns={
-    'column1:': 'name1',
-    'column2:': 'name2',
+    'column1': 'name1',
+    'column2': 'name2',
 })
 ```
 
 ## Format Column Types
 
-Make sure column types are appropriately formatted e.g., `float`, `category`
+Make sure column types are appropriately formatted e.g., `float`, `object`
 
 ```python
 raw_data = raw_data.astype({

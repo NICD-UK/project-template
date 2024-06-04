@@ -4,7 +4,7 @@ from pathlib import Path
 
 #%% Setup
 root_path = Path(__file__).parent.parent.parent
-data_name = "<data-name>"
+data_name = "income"
 
 #%% Read Data
 raw_data = pandas.read_csv(root_path / f"data/raw/{data_name}.csv")
