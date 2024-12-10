@@ -9,30 +9,26 @@ The `project-template` package can create a [project sturcture](#project-structu
 
 ## Install
 
-In the command line run:
+The project template depends on the `uv` package. See [here](https://docs.astral.sh/uv/getting-started/installation/) for installation methods.
 
-```bash
-pip3 install cookiecutter
-```
+> [!WARNING]
+> Issues result from installing both the `uv` and `pyenv` packages. It is recommened to uninstall the `pyenv` package before installing the `uv` package. 
 
 ## Create
 
 In the command line move to where you want to create the project directory and run:
 
 ```bash
-python3 -m cookiecutter https://github.com/NICD-UK/project-template
+uvx cookiecutter https://github.com/NICD-UK/project-template
 ```
 
 You will be prompted for the:
 
 1. Project Name
 2. Project Directory Name
-3. Project Manager Name
-4. Project Manager Email
-5. Project Sponsor Name
-6. Project Sponsor Email
-7. Project Summary
-8. <a name="language">Project Language</a>
+3. Project Summary
+4. <a name="language">Project Language</a>
+5. Language Version
 
 In the command line run:
 
@@ -43,7 +39,7 @@ make
 This command will:
 
 1. Initialise a virtual environment:
-    - `venv` for Python
+    - `.venv` for Python
     - `renv` for R
 2. Install the packages required for the template scripts
 3. Save the packages to a dependencies file:

@@ -4,10 +4,12 @@
 # COMMANDS                                                                      #
 #################################################################################
 
-all: venv save git
+all: setup venv save git
+
+setup:
+	Rscript -e 'install.packages("renv", repos = "https://cloud.r-project.org/")'
 
 venv:
-	Rscript -e 'install.packages("renv", repos = "https://cloud.r-project.org/")'
 	Rscript -e 'renv::init(bare = TRUE)'
 	Rscript -e 'renv::install("choonghyunryu/dlookr")'
 	Rscript -e 'renv::install("glue")'

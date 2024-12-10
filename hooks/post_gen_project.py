@@ -6,8 +6,6 @@ language = "{{cookiecutter.project_language}}"
 
 # create Python project
 if language == "Python":
-    with open(".python-version", "w") as file:
-        file.write(platform.python_version())
     os.remove("Makefile-r")
     os.rename("Makefile-python", "Makefile")
     os.remove("src/2-clean/README-r.md")
